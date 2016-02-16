@@ -1,0 +1,19 @@
+{
+    "uri":"com://lupoiu.com/C1/0.0.1",
+    "code":"http:/lupoiu.com/c1.tgz",
+    "channels": {
+        "inputs":{
+            "ip1":"anonymous"
+        },
+        "output":{
+            "ep1":"anonymous",
+            "ep2":"routing"
+        }
+    },
+    "params": {
+        "p1" : null,
+        "p2" : null,
+        "p3" : null
+    },
+    "entrypoint":"~/component.js"
+}

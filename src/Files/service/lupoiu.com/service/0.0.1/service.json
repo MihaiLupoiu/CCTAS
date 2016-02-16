@@ -1,0 +1,47 @@
+{
+    "uri":"service://upv.es/service/0.0.1",
+    "components":{ 
+        "server":{ 
+            "uri": "component://lupou.com/component/server/0.0.1",
+            "url": "./component/server/component.tar.gz" 
+            },
+     "client":{ 
+        "uri": "component://lupou.com/component/client/0.0.1",
+        "url": "./component/client/component.tar.gz" } 
+    },
+    "graph" : [
+        {
+            "source":{
+                "component":"server",
+                "endpoint":"ip1"
+            },
+            "target":{
+                "component":"client",
+                "endpoint":"ep1"
+            },
+            "channel":"Point-to-Point"
+        },
+        {
+            "source":{
+                "component":"client",
+                "endpoint":"ip1"
+            },
+            "target":{
+                "component":"server",
+                "endpoint":"ep1"
+            },
+            "channel":"Point-to-Point"
+        }
+    ],
+    "entrypoint":{
+        "component":"server",
+        "endpoint":"extraCom",
+        "ExposedPortNumber":5555,
+        "ExposedPortType":"tcp",
+        "HostPortNumber":3333
+    },
+    "params" : {
+        "port" : 8080,
+        "param2" : "value 2"
+    }
+}

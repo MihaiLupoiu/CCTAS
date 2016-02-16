@@ -1,0 +1,8 @@
+Documentacion Adicional
+
+Para que funcione docker en Mac probar docker CLI desde Kitematic.
+Luego ejecutar: 
+	$ eval "$(docker-machine env default)"
+
+Para información de docker:
+	$ docker info

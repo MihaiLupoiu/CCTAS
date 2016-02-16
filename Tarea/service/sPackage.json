@@ -1,0 +1,77 @@
+{
+    "uri":"service://lupoiu.com/Servicio1/0.0.1",
+    //code opcional
+    "components":{
+        "comp1" : "com://lupoiu.com/C1/0.0.1",
+        "comp2" : "com://lupoiu.com/C2/0.0.1",
+        "comp3" : "com://lupoiu.com/C2/0.0.1",
+        "comp4" : "com://lupoiu.com/C3/0.0.1"
+        //se especifican solo los componentes
+    },
+    "graph" : [{
+        "source" : {
+            "component" : "comp1",
+            "endpoint"  : "ep1"
+        },
+        "destination" : {
+            "component" : "comp2",
+            "endpoint" : "ip1",   
+        },
+        "chanel" : "LoadBalancing"
+    },
+    {
+        "source" : {
+            "component" : "comp1",
+            "endpoint"  : "ep1"
+        },
+        "destination" : {
+            "component" : "comp3",
+            "endpoint" : "ip1",   
+        },
+        "chanel" : "LoadBalancing"         
+    },
+    {
+        "source" : {
+            "component" : "comp1",
+            "endpoint"  : "ep2"
+        },
+        "destination" : {
+            "component" : "comp4",
+            "endpoint" : "ip2",   
+        },
+        "chanel" : "PointToPoint"         
+    },
+    {
+        "source" : {
+            "component" : "comp2",
+            "endpoint"  : "ep1"
+        },
+        "destination" : {
+            "component" : "comp4",
+            "endpoint" : "ip1",   
+        },
+        "chanel" : "PointToPoint"         
+    },
+    {
+        "source" : {
+            "component" : "comp3",
+            "endpoint"  : "ep1"
+        },
+        "destination" : {
+            "component" : "comp4",
+            "endpoint" : "ip1",   
+        },
+        "chanel" : "PointToPoint"         
+    }
+
+    ],
+    "entrypoint" : {
+        "componente"    : "comp1",
+        "endpoint"      : "ip1"
+    },
+    "params" : { // no se muy bien que parametros hay que añadir.
+        "param1" : "valor def 1",
+        "param2" : "valor def 2",
+        "param3" : null
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "instanceid" : "RuntimeConfig",
+    "params":{
+        "port":8080,
+        "param2":2,
+        "param3":3
+    },
+    "componentsIPs":{},
+    "channels" : [
+        {
+            "source": "ep1",
+            "targetcomponent": "client",
+            "targetendpoint":"ep1",
+            "chanel": "PointToPoint"
+        }
+    ]
+}

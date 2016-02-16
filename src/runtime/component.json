@@ -1,0 +1,15 @@
+{
+	"uri":"component://lupoiu.com/component/client/0.0.1",
+	"channels": {
+        "inputs":{
+            "ip1":"rep"
+        },
+        "output":{
+            "ep1":"req"
+        }
+    },
+    "params": {
+        "p3" : null
+    },
+    "entrypoint":"~/run.js"
+}

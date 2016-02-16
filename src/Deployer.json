@@ -1,0 +1,16 @@
+{
+	"ServiceURI":"service://lupoiu.com/service/0.0.1",
+	"serviceURL" : "./service.tar.gz",
+	"cardinality" : {
+		"server" : 1,
+		"client" : 2	
+	},
+	"configuration":{
+		"port" : 8000,
+		"param2" : "valor"
+	},
+	"dependency":{
+		"system" : ["build-essential","libzmq-dev","python"],
+		"npm" : ["zmq"]
+	}
+}

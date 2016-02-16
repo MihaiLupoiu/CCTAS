@@ -1,0 +1,14 @@
+{
+    "serviceurl":"http://lupoiu.com",
+    "serviceuri":"service://lupoiu.com/s1/0.0.1",
+    "localURL":"./service/s1",
+    "cardinality":{
+        "FE":1,
+        "CP":2,
+        "DB":1
+    },
+    "config":{
+        "param1": "uno",
+        "param3": "tres"
+    }
+}

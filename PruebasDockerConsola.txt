@@ -1,0 +1,25 @@
+Comprimir los componentes
+tar czf component.tar.gz ./component.json Dockerfile run.js
+
+docker build -t service_lupoiu.com_service_0.0.1_client_1  - < component.tar.gz
+
+docker network create deployer_net
+
+docker run -ti --name client --net deployer_net service_lupoiu.com_service_0.0.1
+
+
+
+
+
+============
+
+Writing /Users/myhay/.boot2docker/certs/boot2docker-vm/ca.pem
+Writing /Users/myhay/.boot2docker/certs/boot2docker-vm/cert.pem
+Writing /Users/myhay/.boot2docker/certs/boot2docker-vm/key.pem
+
+To connect the Docker client to the Docker daemon, please set:
+    export DOCKER_CERT_PATH=/Users/myhay/.boot2docker/certs/boot2docker-vm
+    export DOCKER_TLS_VERIFY=1
+    export DOCKER_HOST=tcp://192.168.59.103:2376
+
+Or run: `eval "$(boot2docker shellinit)"`

@@ -1,0 +1,16 @@
+{
+    "uri":"com://lupoiu.com/C3/0.0.1",
+    "code":"http:/lupoiu.com/c3.tgz",
+    "channels": {
+        "inputs":{
+            "ip1":"routing",
+            "ip2":"routing"
+        }
+    },
+    "params": {
+        "p1" : null,
+        "p2" : null,
+        "p3" : null
+    },
+    "entrypoint":"~/component.js"
+}

@@ -1,0 +1,41 @@
+{
+    "instanceid" : "RuntimeConfigExample",
+    "params":{
+        "p1":1,
+        "p2":2,
+        "p3":3
+    },
+    "componentsIps":{
+        "FE": {
+            "id1": "IP1.1:port" // ip y puerto para conectarse
+        },
+        "CP": {
+            "id2": "IP2.1:port",
+            "id3":"IP2.2:port"
+        },
+        "DB": {
+            "id4": "IP3.1:port"
+        }
+    },
+    // suponesmos que es el copm1
+    "channels" : [
+        {
+            "source": "ep1",
+            "targetcomponent": "comp2",
+            "targetendpoint":"ip1",
+            "chanel": "LoadBalancing"
+        },
+        {
+            "source": "ep1",
+            "targetcomponent": "copm3",
+            "targetendpoint":"ip1",
+            "chanel": "LoadBalancing"
+        },
+        {
+            "source": "ep2",
+            "targetcomponent": "copm4",
+            "targetendpoint":"ip2",
+            "chanel": "PointToPoint"
+        },
+    ]
+}

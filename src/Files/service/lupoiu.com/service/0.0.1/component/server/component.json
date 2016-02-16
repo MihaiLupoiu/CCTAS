@@ -1,0 +1,17 @@
+{
+	"uri":"component://lupoiu.com/component/server/0.0.1",
+	"channels": {
+        "inputs":{
+            "ip1":"routing"
+        },
+        "output":{
+            "ep1":"routing"
+        }
+    },
+    "params": {
+        "port" : 8080,
+        "p2" : null,
+        "p3" : null
+    },
+    "entrypoint":"~/component.js"
+}

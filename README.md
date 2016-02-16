@@ -1,5 +1,37 @@
-# Proyecto Desplegador Docker para la asignatura de Cloud Computing Tecnologías Y Arquitecturas de Servicios.
+Cloud Computing: Tecnologías y Arquitectura de Servicios (Cctas)
+===================
+Master's Degree in Parallel and Distributed Computing at Valencia (UPV)
 
+El propósito de la asignatura es la introducción al Cloud Computing, presentando las problemáticas que plantea y las aproximaciones existentes hoy en día. 
+El planteamiento irá enfocado al análisis de los problemas concretos a resolver, y la aplicación práctica de este análisis, mediante la realización de un diseño de alto nivel y la implementación de un proyecto. 
+
+El alumno que curse la asignatura entenderá las problemáticas tras los sistemas Cloud, las aproximaciones adoptadas hoy en día, y estará preparado para un estudio en más profundidad dentro de las otras asignaturas del máster. 
+
+Learning Units:
+-------------
+> - Introduction to Cloud Computing
+ - Introduction and course objectives
+ - Distributed systems. Applications vs Services
+ - Economics of cloud services
+ - Other topics: Legacy, Private Cloud, Hybrid Cloud ...
+ - Service models: IaaS, PaaS, SaaS
+> - Fundamental problems
+ - Reliability
+ - Scalability
+ - Consistency state
+ - Security
+ - QoS and SLA
+ - Management: Deployment and Maintenance
+> - Interaction Models
+ - SOA
+ - Message queues
+ - Asynchronous events: Observable and Promises
+> - Project: Implementation of SaaS with shared state
+ - Problem definition and requirements
+ - Introduction of technologies to be used
+ - Structure of a solution
+ 
+# Proyecto Desplegador Docker para la asignatura de Cloud Computing Tecnologías Y Arquitecturas de Servicios.
 
 Este proyecto consiste en crear un desplegador para docker.
 
